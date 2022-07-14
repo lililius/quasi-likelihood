@@ -184,9 +184,9 @@ for(irep in 1:nrep){
     ai=ascad[[i]]
     j=1
     group=list()
-    group[[1]]=which(abs(ai-ai[1])<0.2)
+    group[[1]]=which(abs(ai-ai[1])<0.1)
     while(length(unlist(group))<m){
-      ai[-unlist(group)][which(abs(ai[-unlist(group)]-ai[-unlist(group)][1])<0.2)]=j
+      ai[-unlist(group)][which(abs(ai[-unlist(group)]-ai[-unlist(group)][1])<0.1)]=j
       group[[j+1]]=which(ai==j)
       j=j+1
     }
@@ -205,9 +205,9 @@ for(irep in 1:nrep){
   phiest=Phi[I]
   j=1
   group0=list()
-  group0[[1]]=which(abs(aI-aI[1])<0.2)
+  group0[[1]]=which(abs(aI-aI[1])<0.1)
   while(length(unlist(group0))<m){
-    aI[-unlist(group0)][which(abs(aI[-unlist(group0)]-aI[-unlist(group0)][1])<0.2)]=j
+    aI[-unlist(group0)][which(abs(aI[-unlist(group0)]-aI[-unlist(group0)][1])<0.1)]=j
     group0[[j+1]]=which(aI==j)
     j=j+1
   }
